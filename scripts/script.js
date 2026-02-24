@@ -14,7 +14,11 @@ let innerFilter = document.getElementById("inner-filter");
 const cardContainer = document.getElementById("card-container");
 const mainContainer = document.getElementById("main");
 
-
+function calculateCount(){
+    total.innerText = cardContainer.children.length;
+    interviewCount.innerText = interviewList.length;
+    rejectedCount.innerText = rejectedList.length;
+}
 calculateCount();
 
 // toggling buttons
