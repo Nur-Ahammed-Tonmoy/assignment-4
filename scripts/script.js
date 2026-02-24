@@ -1,6 +1,6 @@
 console.log("script is ready to take action");
 
-let interviewList = [];
+let interviewList = ;
 let rejectedList = [];
 let currentStatus = "all-filter-btn";
 
