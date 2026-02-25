@@ -36,7 +36,7 @@ function toggleStyle(id){
     rejectedFilterBtn.classList.add("text-gray-600", "bg-white");
 
     const selected = document.getElementById(id);
-    // console.log(selected)
+     
     currentStatus = id;
     selected.classList.add("bg-blue-600", "text-white");
     selected.classList.remove("text-gray-600", "bg-white");
@@ -64,7 +64,7 @@ function toggleStyle(id){
     
 }
 
-// showing divs accroding to choise
+ 
 mainContainer.addEventListener("click", function(event){
     console.log(event.target);
     if(event.target.classList.contains("interview-btn")){
@@ -91,7 +91,7 @@ mainContainer.addEventListener("click", function(event){
             status,
             notes
         }
-        // console.log(cardDetails)
+         
         const existingJob = interviewList.find(item => item.jobTitle == cardDetails.jobTitle);
         if(!existingJob){
             interviewList.push(cardDetails);
@@ -108,7 +108,7 @@ mainContainer.addEventListener("click", function(event){
     }   
 
     if(event.target.classList.contains("rejected-btn")){
-        // console.log("reject");
+         
         const parentNode = event.target.parentNode.parentNode;
         const jobTitle = parentNode.querySelector(".job-title").innerText;
         const jobRole = parentNode.querySelector(".job-role").innerText;
@@ -132,8 +132,7 @@ mainContainer.addEventListener("click", function(event){
             status,
             notes
         }
-        // console.log(cardDetails)
-        const existingJob = rejectedList.find(item => item.jobTitle == cardDetails.jobTitle);
+         const existingJob = rejectedList.find(item => item.jobTitle == cardDetails.jobTitle);
         if(!existingJob){
             rejectedList.push(cardDetails);
         }
