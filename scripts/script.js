@@ -21,11 +21,10 @@ function calculateCount(){
 }
 calculateCount();
 
-// toggling buttons
+
 const allFilterBtn = document.getElementById("all-filter-btn");
 const interviewFilterBtn = document.getElementById("interview-filter-btn");
 const rejectedFilterBtn = document.getElementById("rejected-filter-btn");
-// console.log(allFilterBtn, interviewFilterBtn, rejectedFilterBtn)
 
 function toggleStyle(id){
     allFilterBtn.classList.remove("bg-blue-600", "text-white");
