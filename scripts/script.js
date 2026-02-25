@@ -1,6 +1,8 @@
 console.log("script is ready to take action");
 
-
+let interviewList = [];
+let rejectedList = [];
+let currentStatus = "all-filter-btn";
 
 const filteredSection = document.getElementById("filtered-section");
 let total = document.getElementById("countTotal");
